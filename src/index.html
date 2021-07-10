@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <base href="/">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!--title-->
+  <title>ApeTech - App Landing Page Template</title>
+
+  <!--favicon icon-->
+  <link rel="icon" href="/assets/img/favicon.png" sizes="16x16 32x32" type="image/png">
+
+  <!-- font-awesome css -->
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+  <!--themify icon-->
+  <link rel="stylesheet" href="assets/css/themify-icons.css">
+
+  <!-- magnific popup css-->
+  <link rel="stylesheet" href="assets/css/magnific-popup.css">
+
+  <!--owl carousel -->
+  <link href="assets/css/owl.theme.default.min.css" rel="stylesheet">
+  <link href="assets/css/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- bootstrap core css -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- custom css -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- responsive css -->
+  <link href="assets/css/responsive.css" rel="stylesheet">
+
+  <script src="assets/js/vendor/modernizr-2.8.1.min.js"></script>
+  <!-- HTML5 Shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="js/vendor/html5shim.js"></script>
+  <script src="js/vendor/respond.min.js"></script>
+  <![endif]-->
+
+</head>
+<body>
+  <app-root></app-root>
+
+  
+<!--=========== all js file link ==============-->
+
+<!-- main jQuery -->
+<script src="assets/js/jquery-3.3.1.min.js"></script>
+
+<!-- bootstrap core js -->
+<script src="assets/js/bootstrap.min.js"></script>
+
+<!-- smothscroll -->
+<script src="assets/js/jquery.easeScroll.min.js"></script>
+
+<!--owl carousel-->
+<script src="assets/js/owl.carousel.min.js"></script>
+
+<!-- scrolling nav -->
+<script src="assets/js/jquery.easing.min.js"></script>
+
+<!--fullscreen background video js-->
+<script src="assets/js/jquery.mb.ytplayer.min.js"></script>
+
+<!--typed js -->
+<script src="assets/js/typed.min.js"></script>
+
+<!--magnific popup js-->
+<script src="assets/js/magnific-popup.min.js"></script>
+
+<!-- custom script -->
+<script src="assets/js/scripts.js"></script>
+<script>
+function validation(){
+var a=document.getElementById("name").value;
+var b=document.getElementById("email").value;
+var c=document.getElementById("phone").value;
+var d=document.getElementById("company").value;
+var e=document.getElementById("message").value;
+var war="";
+var em = b.search("@") ;
+var pt = b.indexOf(".");
+var n=c.length;
+//name validation
+if(a==""){
+  war=war+"*No Name Given <br>";
+
+}
+else if(a!=""){
+war=war+"";
+}
+//email validation
+if(b==""){
+  war=war+"*No Email Given <br>";
+
+}
+else if(em==-1 || pt == -1)
+  {
+war=war+"*Enter A Valid Mail Address <br>";
+}
+else
+{
+  war=war+"";
+}
+//mobile validation
+if(c==""){
+  war=war+"*No Phone number Given <br>";
+
+}
+else if(n!=10){
+war=war+"*Enter A Valid Mobile Number<br>";
+}
+//Company validation
+if(d==""){
+  war=war+"*No Company name Given <br>";
+
+}
+else if(d!=""){
+war=war+"";
+}
+//message validation
+if(e==""){
+  war=war+"*No Message Given <br>";
+
+}
+else if(e!=""){
+war=war+"";
+}
+document.getElementById("WARNING").innerHTML=war;
+};
+</script>
+</body>
+</html>

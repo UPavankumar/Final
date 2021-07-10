@@ -1,0 +1,81 @@
+ <!--contact us section start-->
+ <section id="contact" class="contact-us ptb-90">
+    <div class="contact-us-wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="section-heading">
+                        <h3>Contact with us</h3>
+                        <p>It's very easy to get in touch with us. Just use the contact form or pay us a
+                            visit for a coffee at the office. Dynamically innovate competitive technology after an expanded array of leadership.</p>
+                    </div>
+                    <div class="footer-address">
+                        <h6>Head Office</h6>
+                        <p>121 King St, Melbourne VIC 3000, Australia</p>
+                        <ul>
+                            <li><i class="fa fa-phone"></i> <span>Phone: +61 2 8376 6284</span></li>
+                            <li><i class="fa fa-envelope-o"></i> <span>Email : <a
+                                    href="mailto:hello@yourdomain.com">hello@yourdomain.com</a></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <form action="php/mail.php" method="POST" id="contactForm1" class="contact-us-form" novalidate="novalidate">
+                        <h6>Reach us quickly</h6>
+                        <div class="row">
+                            <div class="col-sm-6 col-xs-12">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="name"
+                                           placeholder="Enter name" required="required">
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-xs-12">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="email"
+                                           placeholder="Enter email" required="required">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 col-xs-12">
+                                <div class="form-group">
+                                    <input type="number" id="phone" value="" class="form-control"
+                                           id="phone" placeholder="Your Phone">
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-xs-12">
+                                <div class="form-group">
+                                    <input type="text" id="company" value="" size="40"
+                                           class="form-control" id="company" placeholder="Your Company">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="form-group">
+                                            <textarea name="message" id="message" class="form-control" rows="7"
+                                                      cols="25" placeholder="Message"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 mt-20">
+                                <span id="WARNING" ></span>
+                                <button class="btn softo-solid-btn pull-right"onclick="validation()" value="submit">
+                                    Send Message
+                                </button>
+                                
+                            </div>
+                        </div>
+                        <div>
+                            
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--contact us section end-->

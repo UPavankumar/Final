@@ -1,0 +1,137 @@
+<!DOCTYPE html><html lang="en"><head>
+  <base href="/">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!--title-->
+  <title>ApeTech - App Landing Page Template</title>
+
+  <!--favicon icon-->
+  <link rel="icon" href="/assets/img/favicon.png" sizes="16x16 32x32" type="image/png">
+
+  <!-- font-awesome css -->
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/font-awesome.min.css"></noscript>
+
+  <!--themify icon-->
+  <link rel="stylesheet" href="assets/css/themify-icons.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/themify-icons.css"></noscript>
+
+  <!-- magnific popup css-->
+  <style>@media screen and (max-width: 800px) and (orientation: landscape), screen and (max-height: 300px){}</style><link rel="stylesheet" href="assets/css/magnific-popup.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/magnific-popup.css"></noscript>
+
+  <!--owl carousel -->
+  <link href="assets/css/owl.theme.default.min.css" rel="stylesheet" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/owl.theme.default.min.css"></noscript>
+  <link href="assets/css/owl.carousel.min.css" rel="stylesheet" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/owl.carousel.min.css"></noscript>
+
+  <!-- bootstrap core css -->
+  <style>html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}body{margin:0;}@media print{*,:after,:before{color:#000!important;text-shadow:none!important;background:0 0!important;-webkit-box-shadow:none!important;box-shadow:none!important;}}*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}:after,:before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}html{font-size:10px;-webkit-tap-highlight-color:rgba(0,0,0,0);}body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;line-height:1.42857143;color:#333;background-color:#fff;}</style><link href="assets/css/bootstrap.min.css" rel="stylesheet" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/bootstrap.min.css"></noscript>
+
+  <!-- custom css -->
+  <style>@import url('https://fonts.googleapis.com/css?family=Montserrat:500,600,700|Open+Sans:300,400');html,body{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}body{line-height:1;}html{overflow-y:scroll;}body{font-weight:400;background-color:#fff;font-family:'Open Sans', sans-serif;color:#787878;font-size:15px;line-height:1.75em;overflow-x:hidden;text-align:left;}</style><link href="assets/css/style.css" rel="stylesheet" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/style.css"></noscript>
+
+  <!-- responsive css -->
+  <style>@media screen and  (max-width: 320px) and (min-width: 0px){}@media screen and (max-width: 360px) and (min-width: 321px){}@media screen and (max-width: 375px) and (min-width: 361px){}@media screen and (max-width: 414px) and (min-width: 376px){}@media screen and (max-width: 480px) and (min-width: 415px){}@media screen and (max-width: 568px) and (min-width: 481px){}@media screen and (max-width: 640px) and (min-width: 569px){}@media screen and (max-width: 720px) and (min-width: 641px){}</style><link href="assets/css/responsive.css" rel="stylesheet" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/responsive.css"></noscript>
+
+  <script src="assets/js/vendor/modernizr-2.8.1.min.js"></script>
+  <!-- HTML5 Shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="js/vendor/html5shim.js"></script>
+  <script src="js/vendor/respond.min.js"></script>
+  <![endif]-->
+
+<link rel="stylesheet" href="styles.31d6cfe0d16ae931b73c.css"></head>
+<body>
+  <app-root></app-root>
+
+  
+<!--=========== all js file link ==============-->
+
+<!-- main jQuery -->
+<script src="assets/js/jquery-3.3.1.min.js"></script>
+
+<!-- bootstrap core js -->
+<script src="assets/js/bootstrap.min.js"></script>
+
+<!-- smothscroll -->
+<script src="assets/js/jquery.easeScroll.min.js"></script>
+
+<!--owl carousel-->
+<script src="assets/js/owl.carousel.min.js"></script>
+
+<!-- scrolling nav -->
+<script src="assets/js/jquery.easing.min.js"></script>
+
+<!--fullscreen background video js-->
+<script src="assets/js/jquery.mb.ytplayer.min.js"></script>
+
+<!--typed js -->
+<script src="assets/js/typed.min.js"></script>
+
+<!--magnific popup js-->
+<script src="assets/js/magnific-popup.min.js"></script>
+
+<!-- custom script -->
+<script src="assets/js/scripts.js"></script>
+<script>
+function validation(){
+var a=document.getElementById("name").value;
+var b=document.getElementById("email").value;
+var c=document.getElementById("phone").value;
+var d=document.getElementById("company").value;
+var e=document.getElementById("message").value;
+var war="";
+var em = b.search("@") ;
+var pt = b.indexOf(".");
+var n=c.length;
+//name validation
+if(a==""){
+  war=war+"*No Name Given <br>";
+
+}
+else if(a!=""){
+war=war+"";
+}
+//email validation
+if(b==""){
+  war=war+"*No Email Given <br>";
+
+}
+else if(em==-1 || pt == -1)
+  {
+war=war+"*Enter A Valid Mail Address <br>";
+}
+else
+{
+  war=war+"";
+}
+//mobile validation
+if(c==""){
+  war=war+"*No Phone number Given <br>";
+
+}
+else if(n!=10){
+war=war+"*Enter A Valid Mobile Number<br>";
+}
+//Company validation
+if(d==""){
+  war=war+"*No Company name Given <br>";
+
+}
+else if(d!=""){
+war=war+"";
+}
+//message validation
+if(e==""){
+  war=war+"*No Message Given <br>";
+
+}
+else if(e!=""){
+war=war+"";
+}
+document.getElementById("WARNING").innerHTML=war;
+};
+</script>
+<script src="runtime.257394ea3a2e7cfa6c33.js" defer></script><script src="polyfills.2b13dcd2ed3b7c9ba7a0.js" defer></script><script src="main.1966d05f0dadba34a8c8.js" defer></script>
+
+</body></html>
